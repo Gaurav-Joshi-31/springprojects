@@ -1,0 +1,11 @@
+package com.customEvent.java;
+import org.springframework.context.ApplicationEvent;
+public class WithdrawlEvent extends ApplicationEvent {
+
+	public WithdrawlEvent(Object source) {
+		super(source);
+	}
+	public String toString() {
+		return "this is a Withdrawl event";
+	}
+}

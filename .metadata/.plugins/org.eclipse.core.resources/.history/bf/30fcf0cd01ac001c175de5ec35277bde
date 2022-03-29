@@ -1,0 +1,6 @@
+package com.springProject;
+
+public class MainApp {
+AbstractApplicationContext context=new 
+
+}

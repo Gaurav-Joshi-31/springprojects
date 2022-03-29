@@ -1,0 +1,5 @@
+package com.customEvent.java;
+
+public abstract class BankAccount {
+
+}

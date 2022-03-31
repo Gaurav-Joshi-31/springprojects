@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/task")
 public class TaskController {
+	
+	@GetMapping()
+	public String fun() {
+		return "Task Demo";
+	}
 
 	@GetMapping("/showMyInfo")
 	public HashMap<String, String> getPersonalInfo() {

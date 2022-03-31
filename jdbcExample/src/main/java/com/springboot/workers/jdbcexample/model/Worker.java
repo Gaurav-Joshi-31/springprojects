@@ -1,4 +1,4 @@
-package com.workers.jdbcexample.model;
+package com.springboot.workers.jdbcexample.model;
 
 import java.sql.Date;
 

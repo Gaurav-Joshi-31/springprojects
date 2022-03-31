@@ -1,4 +1,4 @@
-package com.workers.jdbcexample.repository;
+package com.springboot.workers.jdbcexample.repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,9 +10,9 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.workers.jdbcexample.dao.WorkerDao;
-import com.workers.jdbcexample.model.Worker;
-import com.workers.jdbcexample.util.DatabaseConnection;
+import com.springboot.workers.jdbcexample.dao.WorkerDao;
+import com.springboot.workers.jdbcexample.model.Worker;
+import com.springboot.workers.jdbcexample.util.DatabaseConnection;
 
 @Repository
 public class WorkerRepository implements WorkerDao {

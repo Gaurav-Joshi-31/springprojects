@@ -1,9 +1,9 @@
-package com.workers.jdbcexample.dao;
+package com.springboot.workers.jdbcexample.dao;
 
 import java.sql.SQLException;
 import java.util.List;
 
-import com.workers.jdbcexample.model.Worker;
+import com.springboot.workers.jdbcexample.model.Worker;
 
 
 public interface WorkerDao {

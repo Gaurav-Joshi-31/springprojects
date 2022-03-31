@@ -1,4 +1,4 @@
-package com.workers.jdbcexample;
+package com.springboot.workers.jdbcexample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.workers.jdbcexample.util;
+package com.springboot.workers.jdbcexample.util;
 
 import java.util.Date;
 

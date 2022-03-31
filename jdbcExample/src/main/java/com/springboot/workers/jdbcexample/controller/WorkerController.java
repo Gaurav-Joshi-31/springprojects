@@ -1,4 +1,4 @@
-package com.workers.jdbcexample.controller;
+package com.springboot.workers.jdbcexample.controller;
 
 import java.sql.Date;
 import java.sql.SQLException;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.workers.jdbcexample.model.Worker;
-import com.workers.jdbcexample.repository.WorkerRepository;
+import com.springboot.workers.jdbcexample.model.Worker;
+import com.springboot.workers.jdbcexample.repository.WorkerRepository;
 
 @RestController
 @RequestMapping("/worker")

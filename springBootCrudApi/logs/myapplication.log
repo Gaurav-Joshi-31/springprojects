@@ -1,0 +1,19 @@
+2022-04-05 09:15:02.194  INFO 13156 --- [restartedMain] c.s.w.crudApi.JdbcExampleApplication     : Starting JdbcExampleApplication using Java 17 on GRVJ-PC with PID 13156 (D:\spring\springBootCrudApi\target\classes started by gaura in D:\spring\springBootCrudApi)
+2022-04-05 09:15:02.199  INFO 13156 --- [restartedMain] c.s.w.crudApi.JdbcExampleApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-05 09:15:02.268  INFO 13156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-05 09:15:02.269  INFO 13156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-05 09:15:03.386  INFO 13156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-05 09:15:03.396  INFO 13156 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-05 09:15:03.396  INFO 13156 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-05 09:15:03.479  INFO 13156 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-05 09:15:03.479  INFO 13156 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1210 ms
+2022-04-05 09:15:04.273  INFO 13156 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-05 09:15:04.320  INFO 13156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-05 09:15:04.337  INFO 13156 --- [restartedMain] c.s.w.crudApi.JdbcExampleApplication     : Started JdbcExampleApplication in 2.588 seconds (JVM running for 3.963)
+2022-04-05 09:15:08.854  INFO 13156 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-05 09:15:08.854  INFO 13156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-05 09:15:08.856  INFO 13156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-05 09:26:02.163  WARN 13156 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "{id}"]
+2022-04-05 09:26:24.463  WARN 13156 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "{id}"]
+2022-04-05 09:26:34.287  WARN 13156 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; nested exception is java.lang.NumberFormatException: For input string: "{id}"]
+2022-04-05 09:54:30.427  INFO 13156 --- [RMI TCP Connection(44)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.

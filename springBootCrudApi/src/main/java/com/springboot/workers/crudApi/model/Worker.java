@@ -2,6 +2,9 @@ package com.springboot.workers.crudApi.model;
 
 import java.sql.Date;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Worker implements Comparable<Worker> {
     private int workerId;
     private String firstName;
@@ -10,6 +13,7 @@ public class Worker implements Comparable<Worker> {
     private Date joiningDate;
     private String department;
     private String email;
+    private String password;
 
     public Worker(int workerId) {
         this.workerId = workerId;
@@ -24,9 +28,19 @@ public class Worker implements Comparable<Worker> {
         this.joiningDate = joiningDate;
         this.department = department;
         this.email = email;
+        this.password="$2a$10$dXJ3SW6G7P50lGmMkkmwe.20cQQubK3.HZWzG3YB1tlRy.fqvM/BG\r\n"
+        		+ "";
     }
 
-    public int getworkerId() {
+    public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public int getworkerId() {
         return workerId;
     }
 
@@ -109,14 +123,16 @@ public class Worker implements Comparable<Worker> {
         return true;
     }
 
-    @Override
-    public String toString() {
-        return "Worker [department=" + department + ", email=" + email + ", firstName=" + firstName
-                + ", joiningDate=" + joiningDate + ", lastName=" + lastName + ", salary=" + salary + ", workerId="
-                + workerId + "]";
-    }
+   
 
     @Override
+	public String toString() {
+		return "Worker [workerId=" + workerId + ", firstName=" + firstName + ", lastName=" + lastName + ", salary="
+				+ salary + ", joiningDate=" + joiningDate + ", department=" + department + ", email=" + email
+				+ ", password=" + password + "]";
+	}
+
+	@Override
     public int compareTo(Worker o) {
         return this.getworkerId() - o.getworkerId();
     }

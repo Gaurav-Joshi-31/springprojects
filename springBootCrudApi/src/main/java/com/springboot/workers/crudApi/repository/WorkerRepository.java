@@ -27,7 +27,7 @@ public class WorkerRepository implements WorkerDao {
 
     @Override
     public boolean add(Worker worker) throws SQLException {
-        String addQuery = "insert into worker values(?,?,?,?,?,?,?)";
+        String addQuery = "insert into worker values(?,?,?,?,?,?,?,?)";
         int row = 0;
         boolean res=false;
         try (PreparedStatement statement = connection.prepareStatement(addQuery)) {
@@ -38,6 +38,7 @@ public class WorkerRepository implements WorkerDao {
             statement.setDate(5, worker.getjoiningDate());
             statement.setString(6, worker.getDepartment());
             statement.setString(7, worker.getEmail());
+            statement.setString(8, worker.getPassword());
             row = statement.executeUpdate();
             if(row==1) res=true;
         } catch (SQLException e) {
